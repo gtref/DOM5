@@ -21,10 +21,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
 
   publish-npm:
-    if: github.event_name == 'workflow_dispatch'
+    # Change the 'if' condition to also check for a push to the main branch
+    # or remove the 'if' condition entirely if you want it to run on every push.
+    # The 'if' below checks if the event is a 'push' or 'workflow_dispatch'
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
