@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "A simple NPM(NODE JS) library that can be used for advanced JavaScript DOM minipulisation in your html content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gtref/DOM5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gtref/DOM5/issues"
+  },
+  "homepage": "https://github.com/gtref/DOM5#readme",
+  "devDependencies": {
+    "webpack": "^5.101.2",
+    "webpack-cli": "^6.0.1"
+  }
+}
