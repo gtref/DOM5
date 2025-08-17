@@ -39,4 +39,4 @@ jobs:
       - run: npm run build --if-present
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.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}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
