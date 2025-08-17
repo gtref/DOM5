@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "A simple NPM(NODE JS) library that can be used for advanced JavaScript DOM minipulisation in your html content.",
   "main": "index.js",
+  "bin": {
+    "DOM5": "bin/dom5.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "exit 0",
     "build": "webpack"
   },
   "repository": {
@@ -22,5 +25,8 @@
   "devDependencies": {
     "webpack": "^5.101.2",
     "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
   }
 }
