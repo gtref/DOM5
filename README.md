@@ -1,6 +1,16 @@
 # DOM5.js
 
-A simple and lightweight JavaScript library for DOM manipulation.
+A simple and lightweight JavaScript library for modern DOM manipulation, inspired by jQuery.
+
+[![npm version](https://badge.fury.io/js/dom5-js.svg)](https://badge.fury.io/js/dom5-js)
+
+## Features
+
+-   **Lightweight**: A small footprint, perfect for projects where performance matters.
+-   **jQuery-like API**: A familiar and expressive API for DOM manipulation.
+-   **Chainable**: All manipulation methods are chainable for clean and concise code.
+-   **CLI Tool**: Comes with a command-line tool to initialize projects and run builds.
+-   **Modern**: Uses modern JavaScript features and a modern build process.
 
 ## Installation
 
@@ -12,9 +22,15 @@ npm install dom5-js
 
 ## Usage
 
-### In the Browser
+### In the Browser (via CDN)
 
-You can include the bundled `dom.js` file in your HTML and use the `dom()` function globally.
+The easiest way to get started is by using the JSDelivr CDN. Include this script tag in your HTML:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/dom5-js/dist/dom5.min.js"></script>
+```
+
+Then you can use the `dom5()` function globally.
 
 ```html
 <!DOCTYPE html>
@@ -24,17 +40,19 @@ You can include the bundled `dom.js` file in your HTML and use the `dom()` funct
 </head>
 <body>
   <h1 id="title">Hello, World!</h1>
-  <script src="path/to/dist/dom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dom5-js/dist/dom5.min.js"></script>
   <script>
-    // Select the h1 element and change its text
-    dom('#title').text('Hello, DOM5.js!');
+    const title = dom5('#title');
+
+    // Change the text of the h1 element
+    title.text('Hello, DOM5.js!');
 
     // Add a class to the h1 element
-    dom('#title').addClass('my-class');
+    title.addClass('my-class');
 
     // Add a click event listener
-    dom('#title').on('click', () => {
-      dom('#title').toggleClass('highlight');
+    title.on('click', () => {
+      title.toggleClass('highlight');
     });
   </script>
 </body>
@@ -43,71 +61,83 @@ You can include the bundled `dom.js` file in your HTML and use the `dom()` funct
 
 ### As a Module
 
-You can also import `dom5-js` as a module in your JavaScript files.
+You can also import `dom5-js` as a module in your JavaScript projects.
 
 ```javascript
-import dom from 'dom5-js';
+import dom5 from 'dom5-js';
 
-dom('#title').text('Hello from a module!');
+dom5('#title').text('Hello from a module!');
 ```
 
-### Command-Line Interface (CLI)
+## Command-Line Interface (CLI)
 
-`dom5-js` also comes with a simple command-line interface.
+`dom5-js` comes with a command-line interface to help you get started quickly.
 
 To see the version:
-
 ```bash
-DOM5 --version
+dom5 --version
 ```
 
-To see the help menu:
+### `init`
+
+Initialize a new project with a sample `index.html` and `main.js`.
 
 ```bash
-DOM5 --help
+dom5 init my-new-project
+```
+
+### `build`
+
+Build the library for production (creates `dist/dom5.min.js`).
+
+```bash
+dom5 build
+```
+
+### `dev`
+
+Run a development build (creates `dist/dom5.js`).
+
+```bash
+dom5 dev
 ```
 
 ## API
 
-The `dom()` function returns a `DOM5` instance with the following methods:
+The `dom5()` function returns a `DOM5` instance. All methods that modify the DOM are chainable. Getters will return a value from the first element in the selection.
 
-### `.html(content)`
+-   **`html(content)`**: Sets or gets the HTML content.
+-   **`text(content)`**: Sets or gets the text content.
+-   **`addClass(className)`**: Adds a class.
+-   **`removeClass(className)`**: Removes a class.
+-   **`toggleClass(className)`**: Toggles a class.
+-   **`on(eventName, handler)`**: Attaches an event handler.
+-   **`attr(name, value)`**: Sets or gets an attribute value.
+-   **`css(prop, value)`**: Sets or gets a CSS property value.
+-   **`append(content)`**: Appends content to the end of each selected element.
+-   **`prepend(content)`**: Prepends content to the beginning of each selected element.
+-   **`remove()`**: Removes the selected elements from the DOM.
+-   **`val(value)`**: Sets or gets the value of form elements.
+-   **`each(callback)`**: Iterates over the selected elements.
 
-Sets or gets the HTML content of the selected element.
+## Contributing
 
--   `content` (optional): The HTML content to set. If not provided, returns the current HTML content.
+Contributions are welcome! Here's how to get started:
 
-### `.text(content)`
-
-Sets or gets the text content of the selected element.
-
--   `content` (optional): The text content to set. If not provided, returns the current text content.
-
-### `.addClass(className)`
-
-Adds a class to the selected element.
-
--   `className`: The class name to add.
-
-### `.removeClass(className)`
-
-Removes a class from the selected element.
-
--   `className`: The class name to remove.
-
-### `.toggleClass(className)`
-
-Toggles a class on the selected element.
-
--   `className`: The class name to toggle.
-
-### `.on(eventName, handler)`
-
-Attaches an event handler to the selected element.
-
--   `eventName`: The name of the event to listen for.
--   `handler`: The event handler function.
+1.  **Fork and clone the repository.**
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Run a development build:**
+    ```bash
+    npm run build:dev
+    ```
+4.  **Run tests:**
+    ```bash
+    npm test
+    ```
 
 ## License
 
-This project is licensed under the ISC License.
+This project is licensed under the MIT License.
