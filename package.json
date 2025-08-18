@@ -2,13 +2,25 @@
   "name": "dom5-js",
   "version": "1.0.0",
   "description": "A simple NPM(NODE JS) library that can be used for advanced JavaScript DOM minipulisation in your html content.",
-  "main": "index.js",
+  "main": "dist/dom5.js",
   "bin": {
-    "DOM5": "bin/dom5.js"
+    "dom5": "bin/dom5.js"
   },
+  "files": [
+    "dist",
+    "src",
+    "bin",
+    "LICENSE",
+    "README.md"
+  ],
+  "jsdelivr": "dist/dom5.min.js",
   "scripts": {
-    "test": "exit 0",
-    "build": "webpack"
+    "test": "jest",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   },
   "repository": {
     "type": "git",
@@ -23,6 +35,8 @@
   },
   "homepage": "https://github.com/gtref/DOM5#readme",
   "devDependencies": {
+    "jest": "^30.0.5",
+    "jest-environment-jsdom": "^30.0.5",
     "webpack": "^5.101.2",
     "webpack-cli": "^6.0.1"
   },
