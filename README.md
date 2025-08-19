@@ -18,7 +18,7 @@ A simple and lightweight JavaScript library for modern DOM manipulation, inspire
 You can install `dom5-js` using npm:
 
 ```bash
-npm install dom5-js
+npm install dom5-js-1
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ npm install dom5-js
 The easiest way to get started is by using the JSDelivr CDN. Include this script tag in your HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/dom5-js/dist/dom5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dom5-js-1/dist/dom5.min.js"></script>
 ```
 
 Then you can use the `dom5()` function globally.
@@ -41,7 +41,7 @@ Then you can use the `dom5()` function globally.
 </head>
 <body>
   <h1 id="title">Hello, World!</h1>
-  <script src="https://cdn.jsdelivr.net/npm/dom5-js/dist/dom5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dom5-js-1/dist/dom5.min.js"></script>
   <script>
     const title = dom5('#title');
 
@@ -65,7 +65,7 @@ Then you can use the `dom5()` function globally.
 You can also import `dom5-js` as a module in your JavaScript projects.
 
 ```javascript
-import dom5 from 'dom5-js';
+import dom5 from 'dom5-js-1';
 
 dom5('#title').text('Hello from a module!');
 ```
