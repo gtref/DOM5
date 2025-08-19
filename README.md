@@ -2,7 +2,7 @@
 
 A simple and lightweight JavaScript library for modern DOM manipulation, inspired by jQuery.
 
-[![npm version](https://badge.fury.io/js/dom5-js.svg)](https://badge.fury.io/js/dom5-js)  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/gtref/DOM5)
+[![npm version](https://badge.fury.io/js/dom5-js-1.svg)](https://badge.fury.io/js/dom5-js-1)  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/gtref/DOM5)
 
 
 ## Features
