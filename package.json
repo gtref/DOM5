@@ -1,5 +1,5 @@
 {
-  "name": "dom5-js",
+  "name": "dom5-js-1",
   "version": "1.0.0",
   "description": "A simple NPM(NODE JS) library that can be used for advanced JavaScript DOM minipulisation in your html content.",
   "main": "dist/dom5.js",

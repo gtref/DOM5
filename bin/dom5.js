@@ -138,7 +138,7 @@ program
         '    <hr>\\n' +
         '    <button id="highlightButton">Toggle Highlight on Title</button>\\n' +
         '  </div>\\n' +
-        '  <script src="https://cdn.jsdelivr.net/npm/dom5-js/dist/dom5.min.js"></script>\\n' +
+        '  <script src="https://cdn.jsdelivr.net/npm/dom5-js-1/dist/dom5.min.js"></script>\\n' +
         '  <script src="main.js"></script>\\n' +
         '</body>\\n' +
         '</html>';

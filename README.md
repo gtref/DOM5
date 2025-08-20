@@ -4,7 +4,7 @@
 
 A simple and lightweight JavaScript library for modern DOM manipulation, inspired by jQuery.
 
-[![npm version](https://badge.fury.io/js/dom5-js.svg)](https://badge.fury.io/js/dom5-js)
+[![npm version](https://badge.fury.io/js/dom5-js-1.svg)](https://badge.fury.io/js/dom5-js-1)
 
 ## Features
 
@@ -16,10 +16,10 @@ A simple and lightweight JavaScript library for modern DOM manipulation, inspire
 
 ## Installation
 
-You can install `dom5-js` using npm:
+You can install `dom5-js-1` using npm:
 
 ```bash
-npm install dom5-js
+npm install dom5-js-1
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ npm install dom5-js
 The easiest way to get started is by using the JSDelivr CDN. Include this script tag in your HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/dom5-js/dist/dom5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dom5-js-1/dist/dom5.min.js"></script>
 ```
 
 Then you can use the `dom5()` function globally.
@@ -42,7 +42,7 @@ Then you can use the `dom5()` function globally.
 </head>
 <body>
   <h1 id="title">Hello, World!</h1>
-  <script src="https://cdn.jsdelivr.net/npm/dom5-js/dist/dom5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dom5-js-1/dist/dom5.min.js"></script>
   <script>
     const title = dom5('#title');
 
@@ -63,17 +63,17 @@ Then you can use the `dom5()` function globally.
 
 ### As a Module
 
-You can also import `dom5-js` as a module in your JavaScript projects.
+You can also import `dom5-js-1` as a module in your JavaScript projects.
 
 ```javascript
-import dom5 from 'dom5-js';
+import dom5 from 'dom5-js-1';
 
 dom5('#title').text('Hello from a module!');
 ```
 
 ## Command-Line Interface (CLI)
 
-`dom5-js` comes with a command-line interface to help you get started quickly.
+`dom5-js-1` comes with a command-line interface to help you get started quickly.
 
 To see the version:
 ```bash
