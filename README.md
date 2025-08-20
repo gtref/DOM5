@@ -1,8 +1,14 @@
 # DOM5.js
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/button)](https://github.com/codespaces/new/gtref/DOM5)
+
 A simple and lightweight JavaScript library for modern DOM manipulation, inspired by jQuery.
 
+
+[![npm version](https://badge.fury.io/js/dom5-js-1.svg)](https://badge.fury.io/js/dom5-js-1)
+
 [![npm version](https://badge.fury.io/js/dom5-js-1.svg)](https://badge.fury.io/js/dom5-js-1)  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/gtref/DOM5)
+
 
 
 ## Features
@@ -10,12 +16,12 @@ A simple and lightweight JavaScript library for modern DOM manipulation, inspire
 -   **Lightweight**: A small footprint, perfect for projects where performance matters.
 -   **jQuery-like API**: A familiar and expressive API for DOM manipulation.
 -   **Chainable**: All manipulation methods are chainable for clean and concise code.
--   **CLI Tool**: Comes with a command-line tool to initialize projects and run builds.
+-   **CLI Tool**: Comes with a command-line tool to initialize projects.
 -   **Modern**: Uses modern JavaScript features and a modern build process.
 
 ## Installation
 
-You can install `dom5-js` using npm:
+You can install `dom5-js-1` using npm:
 
 ```bash
 npm install dom5-js-1
@@ -62,7 +68,7 @@ Then you can use the `dom5()` function globally.
 
 ### As a Module
 
-You can also import `dom5-js` as a module in your JavaScript projects.
+You can also import `dom5-js-1` as a module in your JavaScript projects.
 
 ```javascript
 import dom5 from 'dom5-js-1';
@@ -72,7 +78,7 @@ dom5('#title').text('Hello from a module!');
 
 ## Command-Line Interface (CLI)
 
-`dom5-js` comes with a command-line interface to help you get started quickly.
+`dom5-js-1` comes with a command-line interface to help you get started quickly.
 
 To see the version:
 ```bash
@@ -87,21 +93,6 @@ Initialize a new project with a sample `index.html` and `main.js`.
 dom5 init my-new-project
 ```
 
-### `build`
-
-Build the library for production (creates `dist/dom5.min.js`).
-
-```bash
-dom5 build
-```
-
-### `dev`
-
-Run a development build (creates `dist/dom5.js`).
-
-```bash
-dom5 dev
-```
 
 ## API
 
@@ -123,21 +114,7 @@ The `dom5()` function returns a `DOM5` instance. All methods that modify the DOM
 
 ## Contributing
 
-Contributions are welcome! Here's how to get started:
-
-1.  **Fork and clone the repository.**
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-3.  **Run a development build:**
-    ```bash
-    npm run build:dev
-    ```
-4.  **Run tests:**
-    ```bash
-    npm test
-    ```
+Contributions are welcome! We have a set of guidelines to help you get started. Please see our [Contributing Guide](CONTRIBUTING.md) for more details on how to set up your development environment, run tests, and submit pull requests.
 
 ## License
 
