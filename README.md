@@ -34,7 +34,7 @@ npm install dom5-js-1
 The easiest way to get started is by using the JSDelivr CDN. Include this script tag in your HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/dom5-js-1/dist/dom5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dom5-js-1@1.3.0/dist/dom5.min.js"></script>
 ```
 
 Then you can use the `dom5()` function globally.
@@ -47,7 +47,7 @@ Then you can use the `dom5()` function globally.
 </head>
 <body>
   <h1 id="title">Hello, World!</h1>
-  <script src="https://cdn.jsdelivr.net/npm/dom5-js-1/dist/dom5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dom5-js-1@1.3.0/dist/dom5.min.js"></script>
   <script>
     const title = dom5('#title');
 
