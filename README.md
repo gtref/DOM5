@@ -92,6 +92,11 @@ Initialize a new project with a sample `index.html` and `main.js`.
 ```bash
 dom5 init my-new-project
 ```
+or you can use the following command to make a cli js app with a package.json file
+
+```bash
+dom5 init --cli my-new-cli-app
+```
 
 
 ## API
@@ -118,4 +123,4 @@ Contributions are welcome! We have a set of guidelines to help you get started. 
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE)
