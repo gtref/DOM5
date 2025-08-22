@@ -27,7 +27,7 @@ You can install `dom5-js-1` using npm:
 npm install dom5-js-1
 ```
 Or you can use our framework for dom5
-``bash
+```bash
 npm install dom5-fm
 ```
 
